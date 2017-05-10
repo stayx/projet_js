@@ -1,0 +1,67 @@
+body {
+    background-image: url(image/,casino_card_background_wallpaper_hd_1920x1080_by_giozaga-d7intx0-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:yellow;
+}
+
+div button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 35px;
+    color: yellow;
+    background-color:rgba(0, 0, 0, 0.72);
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    color: black;
+}
+
+/* div {
+    background-color: black;
+    height: 350px;
+} */
+
+#machine {
+    margin-top: 125px;
+    background-color: azure;
+}
+
+#case1 {
+    background-image: url(image/coeur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#case2 {
+    background-image: url(image/pique.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#case3 {
+    background-image: url(image/carreau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#case4 {
+    background-image: url(image/trefle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#button {
+    background-color: transparent;
+}
+#button button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}

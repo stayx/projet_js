@@ -5,16 +5,20 @@ function machineASous(){
 	var highscore = document.getElementById("highscore").value;
 	
 /* Tirages des images */
+    var u = Math.floor(Math.random()*4);
+    var v = Math.floor(Math.random()*4);
 	var w = Math.floor(Math.random()*4);
 	var x = Math.floor(Math.random()*4);
 	var y = Math.floor(Math.random()*4);
     var z = Math.floor(Math.random()*4);
 	
 /* Images aléatoires */
-	document.getElementById("img_sous_0").src = 'image/img_' + w + '.jpg';
-	document.getElementById("img_sous_1").src = 'image/img_' + x + '.jpg';
-	document.getElementById("img_sous_2").src = 'image/img_' + y + '.jpg';
-    document.getElementById("img_sous_3").src = 'image/img_' + z + '.jpg';
+    document.getElementById("img_sous_0").src = 'image/img_' + u + '.jpg';
+	document.getElementById("img_sous_1").src = 'image/img_' + v + '.jpg';
+    document.getElementById("img_sous_2").src = 'image/img_' + w + '.jpg';
+	document.getElementById("img_sous_3").src = 'image/img_' + x + '.jpg';
+	document.getElementById("img_sous_4").src = 'image/img_' + y + '.jpg';
+    document.getElementById("img_sous_5").src = 'image/img_' + z + '.jpg';
     
 /* Perdre 1 crédit à chaque tour perdu */
     creditJoueur -= 1;
