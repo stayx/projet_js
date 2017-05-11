@@ -19,13 +19,32 @@ function machineASous(){
 	document.getElementById("img_sous_3").src = 'image/img_' + x + '.jpg';
 	document.getElementById("img_sous_4").src = 'image/img_' + y + '.jpg';
     document.getElementById("img_sous_5").src = 'image/img_' + z + '.jpg';
+    document.getElementById("img_sous_0").className = "rotateIn animated";
+	document.getElementById("img_sous_1").className = "rotateIn animated";
+	document.getElementById("img_sous_2").className = "rotateIn animated";
+    document.getElementById("img_sous_3").className = "rotateIn animated";
+    document.getElementById("img_sous_4").className = "rotateIn animated";
+    document.getElementById("img_sous_5").className = "rotateIn animated";
+    setTimeout(function(){
+        var i = 0
+        if(i=1){
+        if(document.getElementById("img_sous_0").className == "rotateIn animated"){
+    document.getElementById("img_sous_0").removeAttribute("class");
+	document.getElementById("img_sous_1").removeAttribute("class");
+	document.getElementById("img_sous_2").removeAttribute("class");
+    document.getElementById("img_sous_3").removeAttribute("class");
+    document.getElementById("img_sous_4").removeAttribute("class");
+    document.getElementById("img_sous_5").removeAttribute("class");
+    }}
+        i++;
+    },900);
     
 /* Perdre 1 crédit à chaque tour perdu */
     creditJoueur -= 1;
     
 /* Gagner 5 crédit à chaque tour gagné */
-	if(w == x && x == y && y == z){
-		creditJoueur += 5;
+	if(u == v && v == w && w == x && x == y && y == z){
+		creditJoueur += 20;
 	}
     
 /* Mises à jour du meilleur score */
